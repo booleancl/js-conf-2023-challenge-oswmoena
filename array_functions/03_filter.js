@@ -17,11 +17,14 @@
   => Array [10,20]  
 */
 
-function filter(array, callback){
+function filter(array, callback) {
   var arrayLength = array.length;
-	var newArray = [];
+  var newArray = [];
 
-
+  if (arrayLength > 0) {
+    newArray = array.filter((element, index) => callback(element, index))
+  }
+  
   return newArray;
 }
 
