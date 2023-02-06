@@ -29,6 +29,7 @@ function forEach(array, callback){
   var arrayLength = array.length;	
 	for (var i = 0; i < arrayLength; i++) {
     // Tu código acá:
+    return array.forEach((element, index) => callback(element, index, array))
   }
 }
 

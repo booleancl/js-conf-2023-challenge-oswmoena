@@ -25,9 +25,9 @@
   => Array(3) [ "A", "B", "C" ]
 */
 
-function map(array, callback){
+function map(array, callback) {
   // Tu código acá:
-
+  return array.map((element, index) => callback(element, index, array));
 }
 
 module.exports = {
